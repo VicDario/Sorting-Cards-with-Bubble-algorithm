@@ -66,8 +66,7 @@ function sort() {
     let container = document.getElementById("sortContainer");
     container.querySelectorAll("*").forEach((n) => n.remove());
     let count = 0;
-    console.log(cardsOrder.length);
-    for (let wall = cardsOrder.length - 1; wall > 1; wall--) {
+    for (let wall = cardsOrder.length - 1; wall > 0; wall--) {
         for (let index = 0; index < wall; index++) {
             let aux = cardsOrder[index];
             if (aux[0] == "J") aux[0] = 11;
